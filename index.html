@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facial Recorginiton</title>
+    <script defer src="face-api.js"></script>  
+    <script defer src="script.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap"); 
+      body {
+        text-align: center;
+        font-family: "Montserrat", sans-serif;
+        padding:15px;
+      }
+      .container {
+        margin: 0px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      canvas {
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        top: 0;
+        left: 0;
+      }
+      button {
+        margin: 8px;
+      }
+
+      fieldset {
+        border: 2px solid #ccc;
+      }
+      h3 {
+        color: #1f1e1e;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset class="container">
+      <legend><h3>Face Detection</h3></legend>
+      <h3 id="LoadModel">Loading Model...</h3>
+      <div>
+        <button disabled id="webCamBtn">On Webcam</button>
+        <select disabled id="dropdown_camera"></select>
+      </div>
+      <div class="items" id="Videodiv" style="position: relative"></div>
+    </fieldset>
+
+    <fieldset class="container">
+      <legend><h3>Face Detection And Face Recorginiton in an Image</h3></legend>
+      <div>
+        <input disabled id="imageupload" type="file" accept="image/*" />
+        <button disabled id="FaceDetectBtn">Detect Face</button>
+      </div>
+      <div class="items" id="Imagediv" style="position: relative"></div>
+    </fieldset>
+
+    <div style="padding:15px;">&copy; Ashish Bisht</div>
+  </body>
+</html>
