@@ -9,7 +9,8 @@ To use the API methods first of all these models need to be
 loaded.
 
 In this Project face tracking with the expression, recognition is implemented over the live video stream.
-For face recognition, the client has to upload an image. (for this project it can only identify the person whose images are present in the labeled_images folder)
+For face recognition, the client has to upload an image. (for this project it can only identify the person whose images are present in the labeled_images folder).
+This Project is hosted with Live Server Extension on Localhost.
 
 Reference :     
 * [face-api.js](https://justadudewhohacks.github.io/face-api.js/docs/index.html)
@@ -21,4 +22,4 @@ Reference :
 
 ## DEMO
 
-<img src="./demo/demo1.png" width="400" height="200" alt="Face Recognition Demo 1">
+<img src="./demo/demo1.PNG" width="400" height="200" alt="Face Recognition Demo 1">
